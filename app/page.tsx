@@ -23,7 +23,7 @@ export default function Home() {
       
       {/* Hero Section */}
     <section
-  className="relative bg-[url(../public/images/hero.jpg)] from-red-50 to-purple-50 py-32 bg-center bg-cover bg-no-repeat">
+  className="relative bg-[url(../public/images/hero.jpg)] from-red-50 to-purple-50 py-16 md:py-32 bg-center bg-cover bg-no-repeat">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>

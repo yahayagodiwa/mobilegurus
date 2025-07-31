@@ -22,27 +22,22 @@ export default function Home() {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-red-50 to-purple-50 py-20">
+    <section
+  className="relative bg-[url(../public/images/hero.jpg)] from-red-50 to-purple-50 py-20 bg-center bg-cover bg-no-repeat">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
                 On-Demand Mobile Repairs at Your Fingertips
               </h1>
-              <p className="text-xl text-gray-600 mb-8">
+              <p className="text-xl text-white mb-8">
                 Making Mobile Repairs More Convenient For Everyone
               </p>
               <Button size="lg" className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 text-lg">
                 Book Now
               </Button>
             </div>
-            <div className="relative">
-              <img
-                src="https://images.pexels.com/photos/4386321/pexels-photo-4386321.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="Person booking mobile repair on phone"
-                className="rounded-lg shadow-2xl w-full h-96 object-cover"
-              />
-            </div>
+           
           </div>
         </div>
       </section>

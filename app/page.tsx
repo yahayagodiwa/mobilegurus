@@ -23,7 +23,7 @@ export default function Home() {
       
       {/* Hero Section */}
     <section
-  className="relative bg-[url(../public/images/hero.jpg)] from-red-50 to-purple-50 py-20 bg-center bg-cover bg-no-repeat">
+  className="relative bg-[url(../public/images/hero.jpg)] from-red-50 to-purple-50 py-32 bg-center bg-cover bg-no-repeat">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -43,11 +43,11 @@ export default function Home() {
       </section>
 
       {/* Services Overview */}
-      <section className="py-16 bg-white">
+      <section className="py-10 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">What We Repair</h2>
-            <p className="text-lg text-gray-600">Professional repair services for all your devices</p>
+            <p className="text-lg text-gray-600">Professional repair services for all your devices which includes the following and more</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -79,72 +79,85 @@ export default function Home() {
       </section>
 
       {/* Tab Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Tabs defaultValue="academy" className="w-full">
-            <TabsList className="grid w-full grid-cols-1 md:grid-cols-3 mb-8">
-              <TabsTrigger value="academy" className="text-sm md:text-base">Mobile Gurus Academy</TabsTrigger>
-              <TabsTrigger value="centers" className="text-sm md:text-base">Our Repair Centres Near You</TabsTrigger>
-              <TabsTrigger value="technician" className="text-sm md:text-base">Become a Technician</TabsTrigger>
-            </TabsList>
-            
-            <TabsContent value="academy" className="space-y-4">
-              <Card>
-                <CardHeader>
-                  <div className="flex items-center space-x-3">
-                    <GraduationCap className="w-8 h-8 text-red-600" />
-                    <CardTitle className="text-2xl">Mobile Gurus Academy</CardTitle>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600 mb-4">
-                    Join our comprehensive training program and become a certified mobile repair technician. 
-                    Learn from industry experts and gain hands-on experience with the latest repair techniques.
-                  </p>
-                  <Button className="bg-red-600 hover:bg-red-700">Learn More</Button>
-                </CardContent>
-              </Card>
-            </TabsContent>
-            
-            <TabsContent value="centers" className="space-y-4">
-              <Card>
-                <CardHeader>
-                  <div className="flex items-center space-x-3">
-                    <MapPin className="w-8 h-8 text-red-600" />
-                    <CardTitle className="text-2xl">Our Repair Centres Near You</CardTitle>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600 mb-4">
-                    Find the nearest Mobile Gurus repair center in your area. We have locations across Nigeria 
-                    and are expanding throughout Africa to serve you better.
-                  </p>
-                  <Button className="bg-red-600 hover:bg-red-700">Find Locations</Button>
-                </CardContent>
-              </Card>
-            </TabsContent>
-            
-            <TabsContent value="technician" className="space-y-4">
-              <Card>
-                <CardHeader>
-                  <div className="flex items-center space-x-3">
-                    <Wrench className="w-8 h-8 text-red-600" />
-                    <CardTitle className="text-2xl">Become a Technician - Repair with Mobile Gurus</CardTitle>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600 mb-4">
-                    <strong>A Commission-Based Model:</strong> Technicians earn a commission on each job they complete, 
-                    rewarding their expertise and hard work. Join our network of skilled professionals and build 
-                    your repair business with Mobile Gurus.
-                  </p>
-                  <Button className="bg-red-600 hover:bg-red-700">Apply Now</Button>
-                </CardContent>
-              </Card>
-            </TabsContent>
-          </Tabs>
-        </div>
-      </section>
+<section className="py-10 bg-gray-50">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <Tabs defaultValue="academy" className="w-full">
+      <TabsList className="grid w-full grid-cols-1 md:grid-cols-3 mb-20 md:mb-8">
+        <TabsTrigger value="academy" className="text-sm md:text-base">
+          Mobile Gurus Academy
+        </TabsTrigger>
+        <TabsTrigger value="centers" className="text-sm md:text-base">
+          Our Repair Centres Near You
+        </TabsTrigger>
+        <TabsTrigger value="technician" className="text-sm md:text-base">
+          Become a Technician
+        </TabsTrigger>
+      </TabsList>
+
+      {/* Academy Tab */}
+      <TabsContent value="academy" className="space-y-4">
+        <Card>
+          <CardHeader>
+            <div className="flex items-center space-x-3">
+              <GraduationCap className="w-8 h-8 text-red-600" />
+              <CardTitle className="text-2xl">Mobile Gurus Academy</CardTitle>
+            </div>
+          </CardHeader>
+          <CardContent>
+            <p className="text-gray-600 mb-4">
+              Join our comprehensive training program and become a certified mobile repair technician. 
+              Learn from industry experts and gain hands-on experience with the latest repair techniques.
+            </p>
+            <Button className="bg-red-600 hover:bg-red-700">Learn More</Button>
+          </CardContent>
+        </Card>
+      </TabsContent>
+
+      {/* Centers Tab */}
+      <TabsContent value="centers" className="space-y-4">
+        <Card>
+          <CardHeader>
+            <div className="flex items-center space-x-3">
+              <MapPin className="w-8 h-8 text-red-600" />
+              <CardTitle className="text-2xl">Our Repair Centres Near You</CardTitle>
+            </div>
+          </CardHeader>
+          <CardContent>
+            <p className="text-gray-600 mb-4">
+              Find the nearest Mobile Gurus repair center in your area. We have locations across Nigeria 
+              and are expanding throughout Africa to serve you better.
+            </p>
+            <Button className="bg-red-600 hover:bg-red-700">Find Locations</Button>
+          </CardContent>
+        </Card>
+      </TabsContent>
+
+      {/* Technician Tab */}
+      <TabsContent value="technician" className="space-y-4">
+        <Card>
+          <CardHeader>
+            <div className="flex items-center space-x-3">
+              <Wrench className="w-8 h-8 text-red-600" />
+              <div>
+                <CardTitle className="text-2xl">Become a Technician</CardTitle>
+                <p className="text-sm text-gray-500">Repair with Mobile Gurus</p>
+              </div>
+            </div>
+          </CardHeader>
+          <CardContent>
+            <p className="text-gray-600 mb-4">
+              <strong>A Commission-Based Model:</strong> Technicians earn a commission on each job they complete, 
+              rewarding their expertise and hard work. Join our network of skilled professionals and build 
+              your repair business with Mobile Gurus.
+            </p>
+            <Button className="bg-red-600 hover:bg-red-700">Apply Now</Button>
+          </CardContent>
+        </Card>
+      </TabsContent>
+    </Tabs>
+  </div>
+</section>
+
 
       {/* Why Choose Us */}
       <section className="py-16 bg-white">

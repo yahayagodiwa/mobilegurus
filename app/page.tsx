@@ -33,9 +33,11 @@ export default function Home() {
               <p className="text-xl text-white mb-8">
                 Making Mobile Repairs More Convenient For Everyone
               </p>
-              <Button size="lg" className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 text-lg">
+             <a href='https://wa.link/s98x66' target='_blank'> 
+             <Button size="lg" className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 text-lg">
                 Book Now
               </Button>
+              </a>
             </div>
            
           </div>
@@ -108,7 +110,9 @@ export default function Home() {
               Join our comprehensive training program and become a certified mobile repair technician. 
               Learn from industry experts and gain hands-on experience with the latest repair techniques.
             </p>
+             <a href='https://wa.link/j73cr8' target='_blank'> 
             <Button className="bg-red-600 hover:bg-red-700">Learn More</Button>
+            </a>
           </CardContent>
         </Card>
       </TabsContent>
@@ -127,7 +131,9 @@ export default function Home() {
               Find the nearest Mobile Gurus repair center in your area. We have locations across Nigeria 
               and are expanding throughout Africa to serve you better.
             </p>
-            <Button className="bg-red-600 hover:bg-red-700">Find Locations</Button>
+            <a href='https://wa.link/s98x66' target='_blank'> 
+            <Button className="bg-red-600 hover:bg-red-700">Find Location</Button>
+            </a>
           </CardContent>
         </Card>
       </TabsContent>
@@ -150,7 +156,9 @@ export default function Home() {
               rewarding their expertise and hard work. Join our network of skilled professionals and build 
               your repair business with Mobile Gurus.
             </p>
+             <a href='https://wa.link/d88xf0' target='_blank'> 
             <Button className="bg-red-600 hover:bg-red-700">Apply Now</Button>
+            </a>
           </CardContent>
         </Card>
       </TabsContent>

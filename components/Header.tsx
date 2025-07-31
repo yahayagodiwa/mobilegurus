@@ -40,9 +40,11 @@ export default function Header() {
 
           {/* Book Now Button */}
           <div className="hidden md:block">
+           <a href='https://wa.link/s98x66' target='_blank'> 
             <Button className="bg-red-600 hover:bg-red-700 text-white">
               Book Now
             </Button>
+            </a>
           </div>
 
           {/* Mobile menu button */}

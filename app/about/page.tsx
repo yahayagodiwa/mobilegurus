@@ -63,7 +63,7 @@ export default function About() {
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Why Choose Mobile Gurus?</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-lg transition-shadow hover:bg-red-100">
               <CardHeader>
                 <div className="flex items-center space-x-3">
                   <Target className="w-8 h-8 text-red-600" />
@@ -78,7 +78,7 @@ export default function About() {
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-lg transition-shadow hover:bg-red-100">
               <CardHeader>
                 <div className="flex items-center space-x-3">
                   <DollarSign className="w-8 h-8 text-red-600" />
@@ -93,7 +93,7 @@ export default function About() {
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-lg transition-shadow hover:bg-red-100">
               <CardHeader>
                 <div className="flex items-center space-x-3">
                   <Clock className="w-8 h-8 text-red-600" />
@@ -107,7 +107,7 @@ export default function About() {
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-lg transition-shadow hover:bg-red-100">
               <CardHeader>
                 <div className="flex items-center space-x-3">
                   <Shield className="w-8 h-8 text-red-600" />
@@ -143,7 +143,7 @@ export default function About() {
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              <Card className="text-center">
+              <Card className="text-center hover:bg-red-100">
                 <CardHeader>
                   <Users className="w-12 h-12 text-red-600 mx-auto mb-2" />
                   <CardTitle className="text-lg">Community</CardTitle>
@@ -153,7 +153,7 @@ export default function About() {
                 </CardContent>
               </Card>
               
-              <Card className="text-center">
+              <Card className="text-center hover:bg-red-100">
                 <CardHeader>
                   <GraduationCap className="w-12 h-12 text-red-600 mx-auto mb-2" />
                   <CardTitle className="text-lg">Training</CardTitle>

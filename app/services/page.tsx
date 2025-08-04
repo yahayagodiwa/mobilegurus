@@ -111,9 +111,10 @@ export default function Services() {
             <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
               Professional repair services for all your electronic devices. Fast, reliable, and affordable.
             </p>
-            <Button size="lg" className="bg-red-600 hover:bg-red-700 text-white">
+           <a href='https://wa.link/epc8ej' target='_blank'> <Button size="lg" className="bg-red-600 hover:bg-red-700 text-white">
               Book a Repair
-            </Button>
+            </Button>\
+            </a>
           </div>
         </div>
       </section>
@@ -138,9 +139,10 @@ export default function Services() {
                       </li>
                     ))}
                   </ul>
-                  <Button className="w-full mt-4 bg-red-600 hover:bg-red-700">
+               <a href='https://wa.link/epc8ej' target='_blank'>  <Button className="w-full mt-4 bg-red-600 hover:bg-red-700">
                     Get Quote
                   </Button>
+                  </a> 
                 </CardContent>
               </Card>
             ))}

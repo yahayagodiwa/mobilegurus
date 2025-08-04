@@ -79,8 +79,8 @@ export default function Contact() {
                 <CardTitle>Phone</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600">+234 123 456 7890</p>
-                <p className="text-gray-600">+234 987 654 3210</p>
+                <p className="text-gray-600">+234 9034626287</p>
+                <p className="text-gray-600">+234 9037979916</p>
               </CardContent>
             </Card>
 
@@ -90,8 +90,8 @@ export default function Contact() {
                 <CardTitle>Email</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600">info@mobilegurus.ng</p>
-                <p className="text-gray-600">support@mobilegurus.ng</p>
+                <p className="text-gray-600">mobilegurusteam@gmail.com</p>
+                {/* <p className="text-gray-600">support@mobilegurus.ng</p> */}
               </CardContent>
             </Card>
 
@@ -101,8 +101,8 @@ export default function Contact() {
                 <CardTitle>Location</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600">Lagos, Nigeria</p>
-                <p className="text-gray-600">Multiple locations across Africa</p>
+                <p className="text-gray-600">Akwa Ibom, Nigeria</p>
+                <p className="text-gray-600">11 Ekpenyong St, Uyo 520221, </p>
               </CardContent>
             </Card>
 
@@ -223,37 +223,38 @@ export default function Contact() {
             </Card>
 
             {/* Map and Additional Info */}
-            <div className="space-y-8">
+            <div className="space-y-8 cursor-pointer" onClick={()=>window.location.href = "https://maps.app.goo.gl/8yDESF1dfkmxjDWn6"}>
               <Card>
                 <CardHeader>
                   <CardTitle>Visit Our Main Location</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="aspect-video bg-gray-200 rounded-lg flex items-center justify-center mb-4">
+                  <div className="aspect-video bg-gray-200 rounded-lg flex items-center justify-center mb-4 cursor-pointer" 
+                  >
                     <div className="text-center">
                       <MapPin className="w-12 h-12 text-gray-400 mx-auto mb-2" />
-                      <p className="text-gray-500">Interactive Map Coming Soon</p>
-                      <p className="text-sm text-gray-400">Lagos, Nigeria</p>
+                      {/* <p className="text-gray-500">Interactive Map Coming Soon</p> */}
+                      <p className="text-sm text-gray-400">11 Ekpenyong St, Uyo 520221, Akwa Ibom, Nigeria</p>
                     </div>
                   </div>
                   <div className="space-y-2">
                     <p className="flex items-center text-gray-600">
                       <MapPin className="w-4 h-4 mr-2" />
-                      123 Tech Street, Victoria Island, Lagos
+                      11 Ekpenyong St, Uyo 520221, Akwa Ibom, Nigeria
                     </p>
                     <p className="flex items-center text-gray-600">
                       <Phone className="w-4 h-4 mr-2" />
-                      +234 123 456 7890
+                     +234 9034626287
                     </p>
                     <p className="flex items-center text-gray-600">
                       <Clock className="w-4 h-4 mr-2" />
-                      Open Monday - Sunday
+                      Open Monday - Friday
                     </p>
                   </div>
                 </CardContent>
               </Card>
 
-              <Card>
+              {/* <Card>
                 <CardHeader>
                   <CardTitle>Emergency Repairs</CardTitle>
                 </CardHeader>
@@ -265,7 +266,7 @@ export default function Contact() {
                     Emergency Repair Hotline
                   </Button>
                 </CardContent>
-              </Card>
+              </Card> */}
             </div>
           </div>
         </div>

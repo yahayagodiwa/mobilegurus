@@ -22,7 +22,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import Image from 'next/image';
 import first from '../public/images/first.png';
 import hero from '../public/images/hero.jpg';
-import third from '../public/images/third.jpg';
+import laptop from '../public/images/laptop.jpg';
 
 export default function Home() {
   const settings = {
@@ -42,7 +42,7 @@ export default function Home() {
       description:
         "" },
         {
-          image: third,
+          image: laptop,
           title: 'We Can Fix Your Problem',
           description:
             'We provide the best Gadget repain in Nigeria. You can come to our store for a free estimate without an appointment, or mail your device to us from anywhere in Nigeria to receive service.',
@@ -182,7 +182,7 @@ export default function Home() {
                     rewarding their expertise and hard work. Join our network of skilled professionals and build
                     your repair business with Mobile Gurus.
                   </p>
-                  <a href="https://wa.link/d88xf0" target="_blank" rel="noopener noreferrer">
+                  <a href="/technician" rel="noopener noreferrer">
                     <Button className="bg-red-600 hover:bg-red-700">Apply Now</Button>
                   </a>
                 </CardContent>

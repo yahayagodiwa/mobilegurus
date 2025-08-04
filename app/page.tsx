@@ -115,9 +115,9 @@ export default function Home() {
       <section className="py-10 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Tabs defaultValue="academy" className="w-full">
-            <TabsList className="grid w-full grid-cols-1 md:grid-cols-3 mb-8">
+            <TabsList className="grid w-full grid-cols-1 md:grid-cols-2 mb-8">
               <TabsTrigger value="academy">Mobile Gurus Academy</TabsTrigger>
-              <TabsTrigger value="centers">Our Repair Centres Near You</TabsTrigger>
+              {/* <TabsTrigger value="centers">Our Repair Centres Near You</TabsTrigger> */}
               <TabsTrigger value="technician">Become a Technician</TabsTrigger>
             </TabsList>
 
@@ -145,7 +145,7 @@ export default function Home() {
               </Card>
             </TabsContent>
 
-            <TabsContent value="centers" className="space-y-4">
+            {/* <TabsContent value="centers" className="space-y-4">
               <Card>
                 <CardHeader>
                   <div className="flex items-center space-x-3">
@@ -163,7 +163,7 @@ export default function Home() {
                   </a>
                 </CardContent>
               </Card>
-            </TabsContent>
+            </TabsContent> */}
 
             <TabsContent value="technician" className="space-y-4">
               <Card>

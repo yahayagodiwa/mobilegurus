@@ -84,7 +84,7 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="text-center hover:shadow-lg transition-shadow">
+            <Card className="text-center hover:shadow-lg transition-shadow hover:bg-red-100">
               <CardHeader>
                 <Smartphone className="w-12 h-12 text-red-600 mx-auto mb-4" />
                 <CardTitle>Mobile Phones</CardTitle>
@@ -92,7 +92,7 @@ export default function Home() {
               </CardHeader>
             </Card>
 
-            <Card className="text-center hover:shadow-lg transition-shadow">
+            <Card className="text-center hover:shadow-lg transition-shadow hover:bg-red-100">
               <CardHeader>
                 <Laptop className="w-12 h-12 text-red-600 mx-auto mb-4" />
                 <CardTitle>Laptops</CardTitle>
@@ -100,7 +100,7 @@ export default function Home() {
               </CardHeader>
             </Card>
 
-            <Card className="text-center hover:shadow-lg transition-shadow">
+            <Card className="text-center hover:shadow-lg transition-shadow hover:bg-red-100">
               <CardHeader>
                 <Watch className="w-12 h-12 text-red-600 mx-auto mb-4" />
                 <CardTitle>Smart Watches</CardTitle>

@@ -45,7 +45,7 @@ export default function Home() {
           image: third,
           title: 'We Can Fix Your Problem',
           description:
-            'From textbooks to fiction, keep your library running smoothly with a smart system that supports academic successWe provide the best Gadget repain in Nigeria. You can come to our store for a free estimate without an appointment, or mail your device to us from anywhere in Nigeria to receive service.',
+            'We provide the best Gadget repain in Nigeria. You can come to our store for a free estimate without an appointment, or mail your device to us from anywhere in Nigeria to receive service.',
         },
     {
       image: hero,

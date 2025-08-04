@@ -33,6 +33,9 @@ export default function Header() {
             <Link href="/services" className="text-gray-700 hover:text-red-600 transition-colors">
               Services
             </Link>
+            <Link href="/academy" className="text-gray-700 hover:text-red-600 transition-colors">
+              Academy
+            </Link>
             <Link href="/contact" className="text-gray-700 hover:text-red-600 transition-colors">
               Contact
             </Link>

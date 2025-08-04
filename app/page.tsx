@@ -131,10 +131,14 @@ export default function Home() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 mb-4">
-                    Join our comprehensive training program and become a certified mobile repair technician.
-                    Learn from industry experts and gain hands-on experience with the latest repair techniques.
+                    <b>Mobile Gurus Academy</b> is Nigeria’s most forward-thinking and hands-on 
+                    training institution for mobile gadget repairs. Created by Mobile Gurus Ltd, t
+                    he Academy is the brainchild of a mission-driven movement: 
+                    to transform the mobile repair industry by raising a new 
+                    generation of certified, trusted, and highly skilled technicians —one student at a time.
+
                   </p>
-                  <a href="https://wa.link/j73cr8" target="_blank" rel="noopener noreferrer">
+                  <a href="/academy" rel="noopener noreferrer">
                     <Button className="bg-red-600 hover:bg-red-700">Learn More</Button>
                   </a>
                 </CardContent>

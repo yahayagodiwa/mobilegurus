@@ -132,8 +132,7 @@ export default function Home() {
                 <CardContent>
                   <p className="text-gray-600 mb-4">
                     <b>Mobile Gurus Academy</b> is Nigeria’s most forward-thinking and hands-on 
-                    training institution for mobile gadget repairs. Created by Mobile Gurus Ltd, t
-                    he Academy is the brainchild of a mission-driven movement: 
+                    training institution for mobile gadget repairs. Created by Mobile Gurus Ltd, the Academy is the brainchild of a mission-driven movement: 
                     to transform the mobile repair industry by raising a new 
                     generation of certified, trusted, and highly skilled technicians —one student at a time.
 

@@ -112,8 +112,7 @@ export default function Contact() {
                 <CardTitle>Hours</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600">Mon - Fri: 8AM - 8PM</p>
-                <p className="text-gray-600">Sat - Sun: 9AM - 6PM</p>
+                <p className="text-gray-600">Mon - Saturday: 8AM - 6PM</p>
               </CardContent>
             </Card>
           </div>
@@ -248,7 +247,7 @@ export default function Contact() {
                     </p>
                     <p className="flex items-center text-gray-600">
                       <Clock className="w-4 h-4 mr-2" />
-                      Open Monday - Friday
+                      Open Monday - Saturday
                     </p>
                   </div>
                 </CardContent>

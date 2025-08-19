@@ -27,17 +27,17 @@ export default function Header() {
             <Link href="/" className="text-gray-700 hover:text-red-600 transition-colors">
               Home
             </Link>
-            <Link href="/about" className="text-gray-700 hover:text-red-600 transition-colors">
-              About Us
-            </Link>
             <Link href="/services" className="text-gray-700 hover:text-red-600 transition-colors">
-              Services
+            Our Services
             </Link>
             <Link href="/academy" className="text-gray-700 hover:text-red-600 transition-colors">
               Academy
             </Link>
+            <Link href="/about" className="text-gray-700 hover:text-red-600 transition-colors">
+              About Us
+            </Link>
             <Link href="/contact" className="text-gray-700 hover:text-red-600 transition-colors">
-              Contact
+              Contact Us
             </Link>
           </nav>
 
@@ -71,6 +71,18 @@ export default function Header() {
                 Home
               </Link>
               <Link
+                href="/services"
+                className="block px-3 py-2 text-gray-700 hover:text-red-600"
+                onClick={() => setIsMenuOpen(false)}
+              >
+               Our Services
+              </Link>
+               <Link href="/academy" 
+                onClick={() => setIsMenuOpen(false)}
+               className="text-gray-700 hover:text-red-600 ">
+              Academy
+            </Link>
+              <Link
                 href="/about"
                 className="block px-3 py-2 text-gray-700 hover:text-red-600"
                 onClick={() => setIsMenuOpen(false)}
@@ -78,18 +90,11 @@ export default function Header() {
                 About Us
               </Link>
               <Link
-                href="/services"
-                className="block px-3 py-2 text-gray-700 hover:text-red-600"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Services
-              </Link>
-              <Link
                 href="/contact"
                 className="block px-3 py-2 text-gray-700 hover:text-red-600"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Contact
+                Contact Us
               </Link>
               <div className="px-3 py-2">
                 <Button className="w-full bg-red-600 hover:bg-red-700 text-white">

@@ -79,7 +79,7 @@ export default function Footer() {
                 <Link href="https://www.instagram.com/mobile_gurus?igsh=MTV3anI2NXJsd25ieQ==" target="_blank" className="text-gray-300 hover:text-white transition-colors">
                   <Instagram className="w-5 h-5" />
                 </Link>
-                <Link href="https://www.twitter.com/mobilegurus" target="_blank" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="https://x.com/mobile_gurus" target="_blank"  className="text-gray-300 hover:text-white transition-colors">
                   <Twitter className="w-5 h-5" />
                 </Link>
                 <Link href="https://www.linkedin.com/company/mobilegurus" target="_blank" className="text-gray-300 hover:text-white transition-colors">

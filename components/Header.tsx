@@ -33,6 +33,9 @@ export default function Header() {
             <Link href="/academy" className="text-gray-700 hover:text-red-600 transition-colors">
               Academy
             </Link>
+            <Link href="/technician" className="text-gray-700 hover:text-red-600 transition-colors">
+               Technicians
+            </Link>
             <Link href="/about" className="text-gray-700 hover:text-red-600 transition-colors">
               About Us
             </Link>
@@ -62,7 +65,7 @@ export default function Header() {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t flex flex-col justify-center items-center">
               <Link
                 href="/"
                 className="block px-3 py-2 text-gray-700 hover:text-red-600"
@@ -82,6 +85,13 @@ export default function Header() {
                className="text-gray-700 hover:text-red-600 ">
               Academy
             </Link>
+
+               <Link href="/technician" 
+                onClick={() => setIsMenuOpen(false)}
+               className="text-gray-700 hover:text-red-600 ">
+              Technicians
+            </Link>
+
               <Link
                 href="/about"
                 className="block px-3 py-2 text-gray-700 hover:text-red-600"

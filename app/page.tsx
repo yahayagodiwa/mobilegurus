@@ -26,7 +26,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, type ReactNode } from 'react';
 import Image from 'next/image';
 import first from '../public/images/home1.jpg';
 import hero from '../public/images/hero.jpg';
@@ -68,7 +68,7 @@ const slideInUp = {
 };
 
 // Animated components
-const AnimatedCard = ({ children, delay = 0 }) => {
+const AnimatedCard = ({ children, delay = 0 }: { children?: ReactNode; delay?: number }) => {
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -87,7 +87,7 @@ const AnimatedCard = ({ children, delay = 0 }) => {
   );
 };
 
-const AnimatedSection = ({ children, variants = fadeInUp }) => {
+const AnimatedSection = ({ children, variants = fadeInUp }: { children?: ReactNode; variants?: any }) => {
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -106,7 +106,7 @@ const AnimatedSection = ({ children, variants = fadeInUp }) => {
   );
 };
 
-const FloatingElement = ({ children, delay = 0 }) => {
+const FloatingElement = ({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) => {
   return (
     <motion.div
       initial={{ y: 0 }}
@@ -494,7 +494,7 @@ const router = useRouter();
                           </div>
 
                           <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                            Nigeria's premier hands-on training institution for mobile gadget repairs. 
+                            Nigeria&apos;s premier hands-on training institution for mobile gadget repairs. 
                             Transform your career with certified training programs and join the next 
                             generation of skilled technicians.
                           </p>
@@ -598,7 +598,7 @@ const router = useRouter();
                           </div>
 
                           <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                            Join Nigeria's fastest-growing network of skilled technicians. 
+                            Join Nigeria&apos;s fastest-growing network of skilled technicians. 
                             Earn competitive commissions with our proven business model and 
                             comprehensive support system.
                           </p>

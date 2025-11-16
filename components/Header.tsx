@@ -6,12 +6,13 @@ import { Menu, X, Smartphone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import logo from '../public/images/logo.jpg'
+import ThemeToggle from './Toggle';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50">
+    <header className="bg-bg shadow-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -19,27 +20,27 @@ export default function Header() {
             <div className="w-10 h-10 bg-gradient-to-r from-red-700 to-black rounded-lg flex items-center justify-center">
              <Image src={logo} width={200} height={200} alt='log' />
             </div>
-            <span className="text-xl font-bold text-gray-900">Mobile Gurus</span>
+            <span className="text-text text-xl font-bold text-gray-900">Mobile Gurus</span>
           </Link>
-
+<ThemeToggle />
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <Link href="/" className="text-gray-700 hover:text-red-600 transition-colors">
+            <Link href="/" className="text-gray-700 text-text hover:text-red-600 transition-colors">
               Home
             </Link>
-            <Link href="/services" className="text-gray-700 hover:text-red-600 transition-colors">
+            <Link href="/services" className="text-gray-700 text-text hover:text-red-600 transition-colors">
             Our Services
             </Link>
-            <Link href="/academy" className="text-gray-700 hover:text-red-600 transition-colors">
+            <Link href="/academy" className="text-gray-700 text-text hover:text-red-600 transition-colors">
               Academy
             </Link>
-            <Link href="/technician" className="text-gray-700 hover:text-red-600 transition-colors">
+            <Link href="/technician" className="text-gray-700 text-text hover:text-red-600 transition-colors">
                Technicians
             </Link>
-            <Link href="/about" className="text-gray-700 hover:text-red-600 transition-colors">
+            <Link href="/about" className="text-gray-700 text-text hover:text-red-600 transition-colors">
               About Us
             </Link>
-            <Link href="/contact" className="text-gray-700 hover:text-red-600 transition-colors">
+            <Link href="/contact" className="text-gray-700 text-text hover:text-red-600 transition-colors">
               Contact Us
             </Link>
           </nav>
@@ -47,7 +48,7 @@ export default function Header() {
           {/* Book Now Button */}
           <div className="hidden md:block">
            <a href='https://wa.link/epc8ej' target='_blank'> 
-            <Button className="bg-red-600 hover:bg-red-700 text-white">
+            <Button className="bg-primary hover:bg-primary-600 text-white">
               Book Now
             </Button>
             </a>

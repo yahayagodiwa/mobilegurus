@@ -15,7 +15,7 @@ function LoginComponent() {
                 </form>
         </div>
         <div className="w-[50vw] h-[100vh]">
-          <Image src={mobile} alt="mobile repair"/>
+          <Image src={mobile} alt="mobile repairr"/>
         </div>
       </div>
     </section>

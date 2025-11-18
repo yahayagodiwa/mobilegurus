@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { Menu, X, Smartphone } from 'lucide-react';
+import { Menu, X, Smartphone, UserPlus, User } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import logo from '../public/images/logo.jpg'
@@ -25,33 +25,54 @@ export default function Header() {
 <ThemeToggle />
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <Link href="/" className="text-gray-700 text-text hover:text-red-600 transition-colors">
+            <Link href="/" className="text-text text-text hover:text-primary transition-colors">
               Home
             </Link>
-            <Link href="/services" className="text-gray-700 text-text hover:text-red-600 transition-colors">
+            <Link href="/services" className="text-text text-text hover:text-primary transition-colors">
             Our Services
             </Link>
-            <Link href="/academy" className="text-gray-700 text-text hover:text-red-600 transition-colors">
+            <Link href="/academy" className="text-text text-text hover:text-primary transition-colors">
               Academy
             </Link>
-            <Link href="/technician" className="text-gray-700 text-text hover:text-red-600 transition-colors">
+            <Link href="/technician" className="text-text text-text hover:text-primary transition-colors">
                Technicians
             </Link>
-            <Link href="/about" className="text-gray-700 text-text hover:text-red-600 transition-colors">
+            <Link href="/about" className="text-text text-text hover:text-primary transition-colors">
               About Us
             </Link>
-            <Link href="/contact" className="text-gray-700 text-text hover:text-red-600 transition-colors">
+            <Link href="/contact" className="text-text text-text hover:text-primary transition-colors">
               Contact Us
             </Link>
           </nav>
 
-          {/* Book Now Button */}
-          <div className="hidden md:block">
-           <a href='https://wa.link/epc8ej' target='_blank'> 
-            <Button className="bg-primary hover:bg-primary-600 text-white">
-              Book Now
-            </Button>
-            </a>
+          {/* auth Button */}
+          <div className="hidden md:flex gap-4">
+            <a 
+                    href='/login' 
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    <Button 
+                      variant="outline" 
+                      className="w-full border-primary text-primary hover:bg-primary hover:text-white"
+                    >
+                      <User className="w-4 h-4 mr-2" />
+                      Login
+                    </Button>
+                  </a>
+                  <a 
+                    href='https://wa.link/epc8ej' 
+                    target='_blank' 
+                    rel="noopener noreferrer"
+                    className="block"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    <Button 
+                      className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
+                    >
+                      <UserPlus className="w-4 h-4 mr-2" />
+                      Register
+                    </Button>
+                  </a>
           </div>
 
           {/* Mobile menu button */}
@@ -66,51 +87,74 @@ export default function Header() {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t flex flex-col justify-center items-center">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-bg border-t flex flex-col justify-center items-center">
               <Link
                 href="/"
-                className="block px-3 py-2 text-gray-700 hover:text-red-600"
+                className="block px-3 py-2 text-text hover:text-primary"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Home
               </Link>
               <Link
                 href="/services"
-                className="block px-3 py-2 text-gray-700 hover:text-red-600"
+                className="block px-3 py-2 text-text hover:text-primary"
                 onClick={() => setIsMenuOpen(false)}
               >
                Our Services
               </Link>
                <Link href="/academy" 
                 onClick={() => setIsMenuOpen(false)}
-               className="text-gray-700 hover:text-red-600 ">
+               className="text-text hover:text-primary ">
               Academy
             </Link>
 
                <Link href="/technician" 
                 onClick={() => setIsMenuOpen(false)}
-               className="text-gray-700 hover:text-red-600 ">
+               className="text-text hover:text-primary ">
               Technicians
             </Link>
 
               <Link
                 href="/about"
-                className="block px-3 py-2 text-gray-700 hover:text-red-600"
+                className="block px-3 py-2 text-text hover:text-primary"
                 onClick={() => setIsMenuOpen(false)}
               >
                 About Us
               </Link>
               <Link
                 href="/contact"
-                className="block px-3 py-2 text-gray-700 hover:text-red-600"
+                className="block px-3 py-2 text-text hover:text-primary"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact Us
               </Link>
               <div className="px-3 py-2">
-                <Button className="w-full bg-red-600 hover:bg-red-700 text-white">
-                  Book Now
-                </Button>
+                <a 
+                    href='/login' 
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    <Button 
+                      variant="outline" 
+                      className="w-full border-primary text-primary mb-4 hover:bg-primary hover:text-white"
+                    >
+                      <User className="w-4 h-4 mr-2" />
+                      Login
+                    </Button>
+                  </a>
+                  <a 
+                    href='https://wa.link/epc8ej' 
+                    target='_blank' 
+                    rel="noopener noreferrer"
+                    className="block"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    <Button 
+                      className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
+                    >
+                      <UserPlus className="w-4 h-4 mr-2" />
+                      Register
+                    </Button>
+                  </a>
               </div>
             </div>
           </div>

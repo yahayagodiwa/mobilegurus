@@ -634,7 +634,7 @@ export default function Home() {
                               Next Cohort Starts
                             </p>
                             <p className="text-2xl font-bold text-card-foreground">
-                              March 1, 2024
+                              April 1,2026
                             </p>
                             <p className="text-xs text-muted-foreground mt-2">
                               Limited seats available

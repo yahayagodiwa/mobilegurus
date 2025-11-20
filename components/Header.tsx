@@ -128,7 +128,7 @@ export default function Header() {
               </Link>
               <div className="px-3 py-2">
                 <a 
-                    href='/login' 
+                    href='/auth/login' 
                     onClick={() => setIsMenuOpen(false)}
                   >
                     <Button 
@@ -140,10 +140,7 @@ export default function Header() {
                     </Button>
                   </a>
                   <a 
-                    href='https://wa.link/epc8ej' 
-                    target='_blank' 
-                    rel="noopener noreferrer"
-                    className="block"
+                    href='/auth/register' 
                     onClick={() => setIsMenuOpen(false)}
                   >
                     <Button 

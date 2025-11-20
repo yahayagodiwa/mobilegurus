@@ -48,7 +48,7 @@ export default function Header() {
           {/* auth Button */}
           <div className="hidden md:flex gap-4">
             <a 
-                    href='/login' 
+                    href='/auth/login' 
                     onClick={() => setIsMenuOpen(false)}
                   >
                     <Button 
@@ -60,10 +60,8 @@ export default function Header() {
                     </Button>
                   </a>
                   <a 
-                    href='https://wa.link/epc8ej' 
-                    target='_blank' 
-                    rel="noopener noreferrer"
-                    className="block"
+                    href='/auth/register' 
+                    
                     onClick={() => setIsMenuOpen(false)}
                   >
                     <Button 

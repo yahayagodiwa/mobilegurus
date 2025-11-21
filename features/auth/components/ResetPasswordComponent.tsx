@@ -8,7 +8,7 @@ import logot from "@/public/images/logot.png";
 import Image from "next/image";
 import Link from "next/link";
 
-function CreatePassword() {
+function ResetPasswordComponent() {
   const form = useForm({
     defaultValues: {
       password: "",
@@ -75,4 +75,4 @@ function CreatePassword() {
   );
 }
 
-export default CreatePassword;
+export default ResetPasswordComponent;

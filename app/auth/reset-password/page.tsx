@@ -1,10 +1,10 @@
-import LoginComponent from '@/features/auth/components/LoginComponent'
+import ResetPasswordComponent from '@/features/auth/components/ResetPasswordComponent'
 import React from 'react'
 
 function page() {
   return (
     <div className='bg-bg'>
-       <LoginComponent />
+       <ResetPasswordComponent />
     </div>
   )
 }

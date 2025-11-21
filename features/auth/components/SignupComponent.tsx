@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { FormField } from "@/components/ui/form";
 import Image from "next/image";
 import mobile from "../../../public/images/mobile.png";
+import logot from "@/public/images/logot.png";
 import { FcGoogle } from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
 import Link from "next/link";
@@ -27,11 +28,19 @@ function SignupComponent() {
   };
 
   return (
-    <div className="flex min-h-screen items-center justify-center">
+    <div className="flex bg-bg min-h-screen items-center justify-center">
       {/* Flex container */}
-      <div className="flex md:flex-row rounded-lg  overflow-hidden w-full max-w-4xl">
+      <div className="flex rounded-lg shadow-sm border md:flex-row rounded-lg  overflow-hidden w-full max-w-4xl">
         {/* LEFT: Form */}
         <div className="flex-1 p-8">
+          <Image
+            src={logot}
+            alt="Logo"
+            className="h-[32px] mb-4"
+            width={100}
+            height={500}
+          />
+
           <h2 className="text-2xl font-bold mb-2">
             Get Started
             <span className="text-primary text-sm"> Clients</span>
@@ -125,9 +134,13 @@ function SignupComponent() {
             </button>
           </div>
 
-          <p className="text-center mt-2">
+          <p className="text-center mt-2 flex items-center justify-center">
             Already have an account?{" "}
-            <span className="text-primary">Sign In</span>
+           <Link href='/auth/login'>
+           <span className="text-primary">
+            <Button variant={"link"} >Sign In</Button>
+            </span>
+            </Link> 
           </p>
         </div>
 

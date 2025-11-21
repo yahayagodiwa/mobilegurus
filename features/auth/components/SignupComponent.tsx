@@ -5,9 +5,10 @@ import { useForm } from "react-hook-form";
 import { Button } from "@/components/ui/button";
 import { FormField } from "@/components/ui/form";
 import Image from "next/image";
-import mobile from '../../../public/images/mobile.png';
+import mobile from "../../../public/images/mobile.png";
 import { FcGoogle } from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
+import Link from "next/link";
 
 function SignupComponent() {
   const form = useForm({
@@ -29,14 +30,20 @@ function SignupComponent() {
     <div className="flex min-h-screen items-center justify-center">
       {/* Flex container */}
       <div className="flex md:flex-row rounded-lg  overflow-hidden w-full max-w-4xl">
-
         {/* LEFT: Form */}
         <div className="flex-1 p-8">
-          <h2 className="text-2xl font-bold mb-2">Get Started
-            <span className="text-primary text-sm"> Clients</span></h2>
-          <p className="mb-4 text-muted">Set up your account and access repair services easily</p>
+          <h2 className="text-2xl font-bold mb-2">
+            Get Started
+            <span className="text-primary text-sm"> Clients</span>
+          </h2>
+          <p className="mb-4 text-muted">
+            Set up your account and access repair services easily
+          </p>
 
-          <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col gap-4">
+          <form
+            onSubmit={form.handleSubmit(onSubmit)}
+            className="flex flex-col gap-4"
+          >
             <FormField
               control={form.control}
               name="name"
@@ -57,7 +64,6 @@ function SignupComponent() {
                 </select>
               </div>
 
-
               <div className="flex-1">
                 <FormField
                   control={form.control}
@@ -67,7 +73,6 @@ function SignupComponent() {
                 />
               </div>
             </div>
-
 
             <FormField
               control={form.control}
@@ -91,30 +96,39 @@ function SignupComponent() {
               placeholder="Date of Birth"
             />
 
-            <Button
-            variant="outline"
-             type="submit" className="mt-2 text-white 
-             w-full bg-primary hover:bg-transparent hover:text-primary 
-             hover:border hover:border-primary transition-all">
-              Continue
+            <Link href="/auth/create-password" className="w-full">
+              <Button
+                variant="outline"
+                type="submit"
+                className="mt-2 text-white 
+               w-full bg-primary hover:bg-transparent hover:text-primary 
+               hover:border hover:border-primary transition-all"
+              >
+                Continue
               </Button>
+            </Link>
           </form>
           <div className="flex items-center gap-2 w-full mt-2">
             <div className="flex-1 border-t border-muted"></div>
-            <p className="text-muted text-sm whitespace-nowrap">Or Sign in with</p>
+            <p className="text-muted text-sm whitespace-nowrap">
+              Or Sign in with
+            </p>
             <div className="flex-1 border-t border-muted"></div>
           </div>
 
           <div className="flex  sm:flex-row flex-col gap-4 mt-2 w-full">
-  <button className="flex-1 flex items-center justify-center gap-2 px-4 py-2 border border-gray-300 rounded-md hover:bg-primary hover:text-white transition">
-    <FcGoogle size={24} /> Google
-  </button>
-  <button className="flex-1 flex items-center justify-center gap-2 px-4 py-2 border border-gray-300 rounded-md hover:bg-primary hover:text-white transition">
-    <FaApple size={24} /> Apple
-  </button>
-</div>
+            <button className="flex-1 flex items-center justify-center gap-2 px-4 py-2 border border-gray-300 rounded-md hover:bg-primary hover:text-white transition">
+              <FcGoogle size={24} /> Google
+            </button>
+            <button className="flex-1 flex items-center justify-center gap-2 px-4 py-2 border border-gray-300 rounded-md hover:bg-primary hover:text-white transition">
+              <FaApple size={24} /> Apple
+            </button>
+          </div>
 
-          <p className="text-center mt-2">Already have an account? <span className="text-primary">Sign In</span></p>
+          <p className="text-center mt-2">
+            Already have an account?{" "}
+            <span className="text-primary">Sign In</span>
+          </p>
         </div>
 
         {/* RIGHT: Image */}

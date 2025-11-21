@@ -340,7 +340,7 @@ export default function Home() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.6 }}
               >
-                Professional repair services for all your devices with 6-month
+                Professional repair services for all your devices with 30-Days
                 warranty
               </motion.p>
             </div>
